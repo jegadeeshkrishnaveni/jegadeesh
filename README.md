@@ -1,6 +1,5 @@
 # 🌐 Personal Portfolio Website  
 
-![Portfolio Banner](assets/hero-16x9.jpg) <!-- Replace with your actual banner or screenshot -->
 
 <p align="center">
   
