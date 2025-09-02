@@ -1,817 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jegadeesh K - Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <title>Jegadeesh K - Technical & Industrial Trainer | Portfolio</title>
+    <meta name="description" content="Portfolio of Jegadeesh K - Technical & Industrial Trainer with 4+ years experience. Trained 20,000+ students, guided 200+ projects in AI, Software, and Analytics.">
+    <meta name="keywords" content="Jegadeesh K, Technical Trainer, Industrial Trainer, Portfolio, AI Trainer, Software Projects, Machine Learning, Career Guidance, Arakathir, Hewo Tech">
+    <meta name="author" content="Jegadeesh K">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Jegadeesh K - Portfolio">
+    <meta property="og:description" content="Explore the portfolio of Jegadeesh K, Technical & Industrial Trainer with expertise in C, C++, Java, Python, Machine Learning, and Web Technologies.">
+    <meta property="og:image" content="assets/hero-16x9.jpg">
+    <meta property="og:url" content="https://your-domain.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jegadeesh K - Portfolio">
+    <meta name="twitter:description" content="Portfolio of Jegadeesh K - Technical & Industrial Trainer. Explore skills, projects, achievements, and contact details.">
+    <meta name="twitter:image" content="assets/hero-16x9.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Custom CSS instead of Tailwind */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: #f9fafb;
-            color: #1f2937;
-            line-height: 1.6;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-
-        /* New styles for download button */
-        .btn-download {
-            background-color: #10B981;
-            color: white;
-        }
-        
-        .btn-download:hover {
-            background-color: #059669;
-        }
-        
-        .nav-download {
-            background-color: #cae272;
-            color: rgb(60, 34, 207);
-            padding: 8px 15px;
-            border-radius: 5px;
-            font-weight: 500;
-            transition: background-color 0.3s;
-        }
-        
-        .nav-download:hover {
-            background-color: #e8985e;
-            color: white;
-        }
-        
-        /* Mobile responsive adjustments */
-        @media (max-width: 768px) {
-            .nav-download {
-                padding: 6px 12px;
-                font-size: 0.9rem;
-            }
-            
-            .hero-buttons .btn-download {
-                width: 100%;
-                max-width: 250px;
-            }
-        }
-
-        /* Navigation */
-        nav {
-            position: fixed;
-            width: 100%;
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            z-index: 100;
-            padding: 15px 0;
-        }
-        
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #3b82f6;
-            text-decoration: none;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-        
-        .nav-links a {
-            color: #4b5563;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover {
-            color: #3b82f6;
-        }
-        
-        /* Hero Section */
-        .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(to right, #e0f2fe, #dbeafe);
-    padding-top: 80px;
-}
-
-/* Change hero-content to flex row layout */
-.hero-content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    width: 100%;
-    max-width: none; /* Remove the max-width constraint */
-}
-
-/* Add this for the text section */
-.hero-text {
-    flex: 1;
-    max-width: 600px;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    color: #1e293b;
-}
-
-.hero h2 {
-    font-size: 1.8rem;
-    color: #3b82f6;
-    font-weight: 600;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    color: #4b5563;
-    margin-bottom: 20px;
-}
-
-.tag-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 30px;
-}
-
-.tag {
-    background-color: #3b82f6;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 30px;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.btn-primary {
-    background-color: #3b82f6;
-    color: white;
-    margin-right: 15px;
-}
-
-.btn-primary:hover {
-    background-color: #2563eb;
-}
-
-.btn-outline {
-    border: 2px solid #3b82f6;
-    color: #3b82f6;
-}
-
-.btn-outline:hover {
-    background-color: #3b82f6;
-    color: white;
-}
-
-.hero-photo {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.profile-img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-}
-
-.profile-img:hover {
-    transform: translateY(-5px);
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 25px;
-}
-
-/* Add responsive design for mobile */
-@media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 30px;
-        padding: 20px 0;
-    }
-    
-    .hero-text {
-        max-width: 100%;
-    }
-    
-    .hero h1 {
-        font-size: 2.2rem; /* Slightly smaller on mobile */
-    }
-    
-    .hero h2 {
-        font-size: 1.4rem; /* Slightly smaller on mobile */
-    }
-    
-    .hero p {
-        font-size: 1rem; /* Slightly smaller on mobile */
-    }
-    
-    .hero-buttons {
-        justify-content: center;
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center;
-        gap: 12px;
-    }
-    
-    .btn {
-        width: 100%;
-        max-width: 250px; /* Limit button width */
-        margin-right: 0 !important; /* Remove right margin */
-    }
-    
-    .profile-img {
-        max-width: 280px;
-        margin: 0 auto; /* Center the image */
-    }
-    
-    .tag-container {
-        justify-content: center; /* Center tags on mobile */
-    }
-}
-
-/* For very small screens */
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-    
-    .hero h2 {
-        font-size: 1.2rem;
-    }
-    
-    .profile-img {
-        max-width: 220px;
-    }
-}
-
-
-        
-        /* Sections */
-        section {
-            padding: 80px 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 50px;
-            color: #1e293b;
-        }
-        
-        /* About Section */
-        .about {
-            background-color: white;
-        }
-        
-        .about-content {
-            display: flex;
-            gap: 40px;
-        }
-        
-        .about-text {
-            flex: 1;
-        }
-        
-        .about-text h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: #1e293b;
-        }
-        
-        .about-text p {
-            margin-bottom: 20px;
-            color: #4b5563;
-        }
-        
-        .education {
-            flex: 1;
-        }
-        
-        .education h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: #1e293b;
-        }
-        
-        .edu-item {
-            background-color: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-        
-        .edu-item h4 {
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-        
-        .edu-item p {
-            color: #3b82f6;
-        }
-        
-        /* Skills Section */
-        .skills {
-            background-color: #f8fafc;
-        }
-        
-        .skills-container {
-            display: flex;
-            gap: 40px;
-        }
-        
-        .skill-category {
-            flex: 1;
-        }
-        
-        .skill-category h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: #1e293b;
-        }
-        
-        .skill-item {
-            margin-bottom: 20px;
-        }
-        
-        .skill-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 5px;
-        }
-        
-        .skill-bar {
-            height: 10px;
-            background-color: #e5e7eb;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        
-        .skill-progress {
-            height: 100%;
-            background-color: #3b82f6;
-            border-radius: 5px;
-        }
-        
-        /* Experience Section */
-        .exp-item {
-            margin-bottom: 40px;
-        }
-        
-        .exp-header {
-            display: flex;
-            gap: 30px;
-            margin-bottom: 15px;
-        }
-        
-        .exp-title {
-            flex: 1;
-        }
-        
-        .exp-title h3 {
-            font-size: 1.3rem;
-            color: #1e293b;
-        }
-        
-        .exp-title p {
-            color: #3b82f6;
-        }
-        
-        .exp-details {
-            flex: 2;
-        }
-        
-        .exp-details ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        
-        .exp-details li {
-            margin-bottom: 8px;
-            color: #4b5563;
-        }
-        
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-        
-        .project-card {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .project-content {
-            padding: 20px;
-        }
-        
-        .project-content h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            color: #1e293b;
-        }
-        
-        .project-content p {
-            color: #4b5563;
-            margin-bottom: 15px;
-        }
-        
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        
-        .project-tag {
-            background-color: #dbeafe;
-            color: #3b82f6;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-        }
-        
-        /* Achievements Section */
-        .achievements {
-            background-color: #3b82f6;
-            color: white;
-            text-align: center;
-        }
-        
-        .achievements-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-        
-        .achievement-item {
-            padding: 30px;
-        }
-        
-        .achievement-item div {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        
-        .achievement-item p {
-            font-size: 1.2rem;
-        }
-        
-        /* Contact Section */
-
-        /* Modal Styles */
-    .modal {
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .modal-content {
-        background-color: white;
-        padding: 30px;
-        border-radius: 10px;
-        width: 90%;
-        max-width: 400px;
-        text-align: center;
-        position: relative;
-    }
-    
-    .close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        font-size: 24px;
-        cursor: pointer;
-        color: #aaa;
-    }
-    
-    .close:hover {
-        color: #000;
-    }
-    
-    .modal-body i {
-        font-size: 48px;
-        color: #10B981;
-        margin-bottom: 15px;
-    }
-    
-    .modal-body h3 {
-        margin-bottom: 10px;
-        color: #1e293b;
-    }
-    
-    .modal-body p {
-        color: #64748b;
-    }
-
-
-
-        .contact-container {
-            display: flex;
-            gap: 40px;
-        }
-        
-        .contact-form {
-            flex: 1;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-        
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #d1d5db;
-            border-radius: 8px;
-            font-size: 1rem;
-        }
-        
-        .form-group textarea {
-            height: 150px;
-            resize: vertical;
-        }
-        
-        .contact-info {
-            flex: 1;
-            background-color: #f8fafc;
-            padding: 30px;
-            border-radius: 10px;
-        }
-        
-        .contact-info h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: #1e293b;
-        }
-        
-        .contact-details {
-            margin-bottom: 30px;
-        }
-        
-        .contact-details div {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        
-        .contact-details i {
-            color: #3b82f6;
-            margin-right: 15px;
-            font-size: 1.2rem;
-            width: 20px;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: #1e293b;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-        
-        .social-links a:hover {
-            color: #3b82f6;
-        }
-
-        /* skills */
-
-        .skills-container {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    
-    .skill-category {
-        margin-bottom: 30px;
-    }
-    
-    .skill-category h3 {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        color: #1e293b;
-        border-left: 4px solid #3b82f6;
-        padding-left: 15px;
-    }
-    
-    .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 20px;
-    }
-    
-    .tech-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 15px;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-        transition: all 0.3s ease;
-        text-align: center;
-    }
-    
-    .tech-item:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    }
-    
-    .tech-logo {
-        font-size: 2.5rem;
-        margin-bottom: 12px;
-        color: #3b82f6;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        background: rgba(59, 130, 246, 0.1);
-    }
-    
-    .tech-name {
-        font-weight: 600;
-        color: #1e293b;
-    }
-    
-    /* Specific colors for different categories */
-    .skill-category:nth-child(1) .tech-item .tech-logo { color: #004482; background: rgba(0, 68, 130, 0.1); }
-    .skill-category:nth-child(2) .tech-item .tech-logo { color: #E34F26; background: rgba(227, 79, 38, 0.1); }
-    .skill-category:nth-child(3) .tech-item .tech-logo { color: #47A248; background: rgba(71, 162, 72, 0.1); }
-    .skill-category:nth-child(4) .tech-item .tech-logo { color: #0078D7; background: rgba(0, 120, 215, 0.1); }
-    .skill-category:nth-child(5) .tech-item .tech-logo { color: #7E57C2; background: rgba(126, 87, 194, 0.1); }
-    
-    /* Responsive design */
-    @media (max-width: 768px) {
-        .skills-grid {
-            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-            gap: 15px;
-        }
-        
-        .tech-logo {
-            font-size: 2rem;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .skill-category h3 {
-            font-size: 1.3rem;
-        }
-    }
-
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .hero h2 {
-                font-size: 1.5rem;
-            }
-            
-            .about-content,
-            .skills-container,
-            .contact-container {
-                flex-direction: column;
-            }
-            
-            .exp-header {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .achievements-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        
-        
-        /* Video Section Styles */
-        .video-section {
-            background-color: white;
-            padding: 80px 0;
-        }
-        
-        .video-container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            margin: 30px auto;
-            max-width: 800px;
-        }
-        
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        .video-caption {
-            margin-top: 20px;
-            color: #4b5563;
-            font-size: 1.1rem;
-        }
-        
-        @media (max-width: 768px) {
-            .video-wrapper {
-                margin: 20px 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -825,7 +43,7 @@
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
-                <!-- Add download button to navigation -->
+                <!-- Resume Button -->
                 <a href="resume.pdf" download="Jegadeesh_K_Resume.pdf" class="nav-download">
                     <i class="fas fa-download"></i> Resume
                 </a>
@@ -837,7 +55,6 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <!-- Text Content -->
                 <div class="hero-text">
                     <h1>Jegadeesh K</h1>
                     <h2>Technical & Industrial Trainer</h2>
@@ -851,16 +68,13 @@
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-primary">Get In Touch</a>
                         <a href="#projects" class="btn btn-outline">View Projects</a>
-                        <!-- Add download button to hero section -->
                         <a href="resume.pdf" download="Jegadeesh_K_Resume.pdf" class="btn btn-download">
                             <i class="fas fa-download"></i> Download Resume
                         </a>
                     </div>
                 </div>
-                
-                <!-- Photo Section -->
                 <div class="hero-photo">
-                    <img src="coat soot photo.jpg" alt="Jegadeesh K" class="profile-img">
+                    <img src="coat soot photo.jpg" alt="Jegadeesh K Portfolio" class="profile-img">
                 </div>
             </div>
         </div>
@@ -879,29 +93,19 @@
                 </div>
                 <div class="education">
                     <h3>Education</h3>
-                    <div class="edu-item">
-                        <h4>MSc Computer Science</h4>
-                        <p>PSG College of Arts & Science | 87.97% | 2025</p>
-                    </div>
-                    <div class="edu-item">
-                        <h4>BCA Computer Applications</h4>
-                        <p>PSG College of Arts & Science | 89.92% | 2023</p>
-                    </div>
-                    <div class="edu-item">
-                        <h4>Higher Secondary</h4>
-                        <p>RG Matric Higher Secondary School | 89.17% | 2020</p>
-                    </div>
-                    <div class="edu-item">
-                        <h4>SSLC</h4>
-                        <p>RG Matric Higher Secondary School | 94.6% | 2018</p>
-                    </div>
+                    <div class="edu-item"><h4>MSc Computer Science</h4><p>PSG College of Arts & Science | 87.97% | 2025</p></div>
+                    <div class="edu-item"><h4>BCA Computer Applications</h4><p>PSG College of Arts & Science | 89.92% | 2023</p></div>
+                    <div class="edu-item"><h4>Higher Secondary</h4><p>RG Matric Higher Secondary School | 89.17% | 2020</p></div>
+                    <div class="edu-item"><h4>SSLC</h4><p>RG Matric Higher Secondary School | 94.6% | 2018</p></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-<!-- Skills Section -->
+    <!-- (kept exactly as you wrote, structured already) -->
+
+    <!-- Skills Section -->
 <section id="skills" class="skills">
     <div class="container">
         <h2 class="section-title">Skills & Expertise</h2>
@@ -1064,8 +268,9 @@
     </div>
 </section>
 
-
     <!-- Experience Section -->
+    <!-- (kept exactly as you wrote, structured already) -->
+
     <section id="experience" class="about">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
@@ -1120,8 +325,11 @@
             </div>
         </div>
     </section>
+    
 
     <!-- Projects Section -->
+    <!-- (kept exactly as you wrote, structured already) -->
+
     <section id="projects" class="skills">
         <div class="container">
             <h2 class="section-title">Projects</h2>
@@ -1175,15 +383,17 @@
         </div>
     </section>
 
+    <!-- Video Section -->
+    <!-- (kept exactly as you wrote, structured already) -->
+
     <!-- NEW: LinkedIn Video Section -->
     <section class="video-section">
         <div class="container">
             <h2 class="section-title">Professional Insights</h2>
             <div class="video-container">
                 <div class="video-wrapper">
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7358116057707958272?compact=1" 
-                            height="399" width="504" frameborder="0" allowfullscreen="" 
-                            title="Embedded post"></iframe>
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7361459695800213504?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe> 
+                            
                 </div>
                 <p class="video-caption">Sharing my expertise and insights on technical training and career development</p>
             </div>
@@ -1191,6 +401,8 @@
     </section>
 
     <!-- Achievements Section -->
+    <!-- (kept exactly as you wrote, structured already) -->
+
     <section class="achievements">
         <div class="container">
             <h2 class="section-title">Key Achievements</h2>
@@ -1212,8 +424,9 @@
     </section>
 
     <!-- Contact Section -->
-    <!-- Contact Section -->
-<section id="contact" class="about">
+    <!-- (kept exactly as you wrote, structured already) -->
+
+    <section id="contact" class="about">
     <div class="container">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-container">
@@ -1277,100 +490,33 @@
     </div>
 </section>
 
-<!-- Custom Notification Modal -->
-<div id="notification-modal" class="modal" style="display: none;">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="modal-body">
-            <i class="fas fa-check-circle"></i>
-            <h3>Message Sent Successfully!</h3>
-            <p>Thank you for your message. I will get back to you soon.</p>
+
+
+    <!-- Custom Notification Modal -->
+    <div id="notification-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <i class="fas fa-check-circle"></i>
+                <h3>Message Sent Successfully!</h3>
+                <p>Thank you for your message. I will get back to you soon.</p>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2023 Jegadeesh K. All rights reserved.</p>
             <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
-                <a href="#"><i class="fas fa-phone"></i></a>
+                <a href="https://linkedin.com/in/jegadeesh-k-5a953121a"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:jegadeeshkanagaraj28@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+918531046561"><i class="fas fa-phone"></i></a>
             </div>
         </div>
     </footer>
 
-    <script>
-document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const form = this;
-    const submitBtn = form.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
-
-    // Show success modal right away
-    showNotification();
-
-    // Actually submit to FormSubmit *without clearing fields first*
-    setTimeout(() => {
-        form.submit();   // ✅ submits with data
-    }, 800); // slight delay just for animation effect
-});
-
-// Show custom notification
-function showNotification() {
-    const modal = document.getElementById('notification-modal');
-    modal.style.display = 'flex';
-    
-    // Auto close after 3 seconds
-    setTimeout(() => {
-        modal.style.display = 'none';
-    }, 3000);
-}
-
-// Close modal when clicking on X
-document.querySelector('.close').addEventListener('click', function() {
-    document.getElementById('notification-modal').style.display = 'none';
-});
-
-// Close modal when clicking outside
-window.addEventListener('click', function(event) {
-    const modal = document.getElementById('notification-modal');
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-});
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 80,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
-
-// Optional: Add confirmation for download
-        document.querySelectorAll('a[download]').forEach(link => {
-            link.addEventListener('click', function() {
-                // You can add tracking or analytics here
-                console.log('Resume download initiated');
-            });
-        });
-
-</script>
-
+    <!-- External JS -->
+    <script src="script.js"></script>
 </body>
 </html>
